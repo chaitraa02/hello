@@ -1,17 +1,32 @@
-package day2;
+class Animal {
+    Animal() {
+        System.out.println("hello");
+    }
 
-public class code6 {
-	public static void main (String args[]) {
-		int a=10;
-		int b=20;
-		int sum=a+b;
-		int diff=a-b;
-		int prod=a*b;
-		int quo=a%b;
-		System.out.println("Sum:"+sum);
-		System.out.println("Difference:"+diff);
-		System.out.println("Product:"+prod);
-		System.out.println("Quotient:"+quo);
-	}
+    void run() {
+        System.out.println("Animal is running");
+    }
+}
 
+class Dog extends Animal {
+    Dog() {
+        super(); 
+    }
+
+    void run() {
+        super.run(); 
+        System.out.println("Dog is running fast!");
+    }
+
+    void Sound() {
+        System.out.println("hi");
+    }
+}
+
+class code6 {
+    public static void main(String[] args) {
+        Dog dg = new Dog();
+        dg.run();   
+        dg.Sound();
+    }
 }

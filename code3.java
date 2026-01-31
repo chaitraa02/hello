@@ -1,16 +1,26 @@
-package day2;
-
-public class code3 {
-	public static void main (String args[]) {
-		swap(10,20);
-	}
-	private static void swap(int a, int b) {
-	    a = a + b;
-	    b = a - b;
-	    a = a - b;
-
-	    System.out.println("a:" + a);
-	    System.out.println("b:" + b);
-	}
-
+ class Animal {
+    void Sound(){
+        System.out.println("the animal makes sound");
+    }
+    
 }
+class Cat extends Animal{
+    void meow(){
+        System.out.println("cat meow");
+    }
+}
+class Dog extends Animal{
+    void bark(){
+        System.out.println("dog bark");
+    }
+}
+class code3{
+    public static void main(String[] args) {
+        Cat ca=new Cat();
+        Dog dg=new Dog();
+        ca.meow();
+        dg.bark();
+    
+    }
+}
+ 

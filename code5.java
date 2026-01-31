@@ -1,12 +1,19 @@
-package day2;
-
-public class code5 {
-	public static void main (String args[]) {
-	int length = 10;
-    int breadth = 5;
-
-    int area = length * breadth;
-
-    System.out.println("Area of rectangle = " + area);
-	}
+ class Animal {
+    Animal(){
+        System.out.println("hello");
+    }
+    
+}
+class Dog extends Animal{
+    Dog(){
+    super();}
+    void Sound(){
+        System.out.println("hi");
+    }
+}
+class code5{
+    public static void main(String[] args) {
+        Dog dg=new Dog();
+        dg.Sound();
+    }
 }
